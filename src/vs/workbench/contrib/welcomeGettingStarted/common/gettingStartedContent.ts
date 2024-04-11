@@ -171,7 +171,7 @@ export const startEntries: GettingStartedStartEntryContent = [
 		icon: Codicon.heart,
 		content: {
 			type: 'startEntry',
-			command: 'command:workbench.action.log',
+			command: 'https://www.ida.liu.se/~TDDE51/',
 		}
 	},
 ];
