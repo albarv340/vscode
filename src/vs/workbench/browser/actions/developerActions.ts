@@ -412,6 +412,22 @@ class LogStorageAction extends Action2 {
 	}
 }
 
+class LogAction extends Action2 {
+
+	constructor() {
+		super({
+			id: 'workbench.action.log',
+			title: localize2({ key: 'log', comment: ['Log Hello World.'] }, "Log Hello World"),
+			category: Categories.Developer,
+			f1: true
+		});
+	}
+
+	run(): void {
+		console.log('Hello world!');
+	}
+}
+
 class LogWorkingCopiesAction extends Action2 {
 
 	constructor() {
@@ -648,6 +664,7 @@ class StopTrackDisposables extends Action2 {
 registerAction2(InspectContextKeysAction);
 registerAction2(ToggleScreencastModeAction);
 registerAction2(LogStorageAction);
+registerAction2(LogAction);
 registerAction2(LogWorkingCopiesAction);
 registerAction2(RemoveLargeStorageEntriesAction);
 if (!product.commit) {

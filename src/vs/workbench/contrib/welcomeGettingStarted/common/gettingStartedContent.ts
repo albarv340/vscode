@@ -163,6 +163,17 @@ export const startEntries: GettingStartedStartEntryContent = [
 			command: 'command:workbench.action.remote.showWebStartEntryActions',
 		}
 	},
+	{
+		id: 'topLevelTDDE51',
+		title: localize('gettingStarted.topLevelTDDE51.title', "Take course TDDE51"),
+		description: localize('gettingStarted.topLevelTDDE51.description', "Take the best course on LiU."),
+		when: '!isWeb',
+		icon: Codicon.heart,
+		content: {
+			type: 'startEntry',
+			command: 'command:workbench.action.log',
+		}
+	},
 ];
 
 const Button = (title: string, href: string) => `[${title}](${href})`;
